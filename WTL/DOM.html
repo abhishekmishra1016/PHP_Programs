@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Handling Assignment</title>
+
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            div {
+                margin-top: 150px;
+                height: fit-content;
+                width: fit-content;
+                margin: auto;
+                text-align: center;
+            }
+
+            table, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                text-align: center;
+                padding: 5px;
+            }
+
+            .radiobutton {
+                margin-left: 30px;
+            }
+
+            #show-button {
+                margin-right: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="div-table">
+            <h1>Table Handling</h1>
+            <input type="button" onclick="showTable()" value="Click for Table">
+            <br><br>
+            <table id="table"></table>
+        </div>
+
+        <div id="div-radio">
+            <br><br>
+            <label for = "gender">Choose a radio button: </label><br>
+            <input class = "radiobutton" id = "rb1" name = "rb" type = "radio" onclick="showRbText()" value = "Radio Button 1"> Radio Button 1
+            <input class = "radiobutton" id = "rb2" name = "rb" type = "radio" onclick="showRbText()" value = "Radio Button 2"> Radio Button 2
+            <br><br>
+            <b><p id="rb-output"></p></b>
+        </div>
+
+        <div id="div-button-show">
+            <input type="button" id="show-button" onclick="showButton()" value="Click to Show Button">
+        </div>
+
+        <script src="scriptdom.js"></script>
+    </body>
+</html>

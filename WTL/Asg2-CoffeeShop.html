@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coffee Shop</title>
+    
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                background-image: linear-gradient(rgb(240, 172, 172), white);
+            }
+
+            header {
+                position: relative;
+                top: -36px;
+                height: 850px;
+                background-image: linear-gradient(rgb(185, 65, 65), rgb(255, 92, 92));
+            }
+
+            /* .white-patch {
+                height: 800px;
+                background-image: linear-gradient(rgb(240, 172, 172), white);
+            } */
+
+            .navbar {
+                position: fixed;
+                height: 70px;
+                width: 100%;
+                background-color: rgba(185, 65, 65, 0);
+            }
+            
+            .navbar-opaque {
+                background-color: rgb(212, 85, 85);
+                z-index: 3;
+            }
+
+            #navbar-list {
+                position: relative;
+                left: 50%;
+            }
+
+            .inline-li {
+                display: inline;
+                margin-left: 50px;
+            }
+
+            .navbar-link {
+                font-size: 18px;
+                text-decoration: none;
+                color: aliceblue;
+            }
+
+            .navbar-link:hover {
+                color: orange;
+            }
+
+            .main-line {
+                position: relative;
+                top: 150px;
+                text-align: center;
+                color: aliceblue;
+                font-size: 50px;
+            }
+
+            #decoration1 {
+                position: relative;
+                top: 150px;
+                text-align: center;
+                color: aliceblue;
+            }
+
+            .div-home-content {
+                position: relative;
+                top: 180px;
+                text-align: center;
+                margin-left: 100px;
+                margin-right: 100px;
+                color: aliceblue;
+                font-size: 23px;
+            }
+
+            .div-coffee-images {
+                height: fit-content;
+                width: fit-content;
+                margin: auto;
+                margin-top: 250px;
+            }
+
+            .coffee-images {
+                margin: 0px 50px;
+            }
+
+            main {
+                color:brown;
+                text-align: center;
+            }
+
+            .about-header {
+                font-size: 50px;
+            }
+
+            .big-tilda {
+                position: relative;
+                top: 15px;
+                font-size: 100px;
+                margin: 30px;
+            }
+
+            .about-content {
+                margin: 0px 50px;
+                font-size: large;
+            }
+
+            #special {
+                height: 500px;
+                width: 100%;
+                margin-top: 100px;
+                background-color: black;
+                color: aliceblue;
+            }
+
+            .left {
+                float: left;
+            }
+
+            .special-header {
+                position: relative;
+                top: 30px;
+                left: 50px;
+                font-size: 40px;
+            }
+
+            .special-content {
+                position: relative;
+                top: 30px;
+                left: 50px;
+                margin-right: 1000px;
+                font-size: 20px;
+            }
+
+            .right {
+                float: right;
+            }
+
+            #arabica-coffee {
+                position: relative;
+                top: -310px;
+                left: -250px;
+            }
+
+            #menu {
+                width: 100%;
+                text-align: center;
+            }
+
+            .menu-header {
+                position: relative;
+                left: 15%;
+                font-size: 50px;
+            }
+
+            .table-menu {
+                position: relative;
+                left: 13%;
+                height: fit-content;
+                width: fit-content;
+                margin: auto;
+                font-size: larger;
+            }
+
+            .cell-wide {
+                padding: 20px 50px;
+            }
+
+            footer {
+                margin-top: 150px;
+                height: 300px;
+                width: 100%;
+                background-color: rgb(185, 65, 65);
+                color: aliceblue;
+            }
+
+            .contact-header {
+                position: relative;
+                top: 20px;
+                text-align: center;
+                font-size: 30px;
+            }
+
+            .table-contact {
+                height: fit-content;
+                width: fit-content;
+                margin: auto;
+            }
+
+            #last-line {
+                position: relative;
+                top: -10px;
+                text-align: center;
+            }
+
+            #fawzaan-link {
+                text-decoration: none;
+                color: yellow;
+            }
+            </style>
+    </head>
+
+    <body>
+        <header id="header">
+            <nav id="navbar" class="navbar">
+                <ul id="navbar-list">
+                    <li class="inline-li"><a href="#header" class="navbar-link">Home</a></li>
+                    <li class="inline-li"><a href="#about" class="navbar-link">About</a></li>
+                    <li class="inline-li"><a href="#special" class="navbar-link">Today's Special</a></li>
+                    <li class="inline-li"><a href="#menu" class="navbar-link">Menu</a></li>
+                    <li class="inline-li"><a href="#footer" class="navbar-link">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <h1 class="main-line">Welcome to the Coffee Shop!</h1>
+            <div id="decoration1">----------------- x -----------------</div>
+
+            <div class="div-home-content">
+                <p class="home-content">We provide all types of coffees from Lattes to Espressos. We believe that both, quality and quantity matter, and so, you will find your servings to be large, and the taste upon your tastebuds to be far greater.</p>
+            </div>
+
+            <div class="div-coffee-images">
+                <img class="coffee-images" id="img1" src="./fahmi-fakhrudin-nzyzAUsbV0M-unsplash.jpg" alt="Coffee with a spoon on the side" height="330" width="430">
+                <img class="coffee-images" id="img2" src="./nathan-dumlao-6VhPY27jdps-unsplash.jpg" alt="Three people holding coffee cups" height="330" width="430">
+                <img class="coffee-images" id="img3" src="./nathan-dumlao-KixfBEdyp64-unsplash.jpg" alt="Coffee grinders side by side" height="330" width="430">
+            </div>
+        </header>
+
+        <main id="about">
+            <h1 class="about-header"><span class="big-tilda">~</span>About our Shop<span class="big-tilda">~</span></h1>
+
+            <div class="div-about-content">
+                <p class="about-content">Our coffee shop is built from a small dream of a young entrepreneur. Your constant support, feedback and guidance fuels the working of our coffee shop and has helped make hundreds of lives experience a happy time even if for a few minutes. From the belief system of 'The Art of Giving', our young CEO believes in letting our dear customers experience the taste, culture and essence behind every sip of coffee they take, rather than pay attention to the amount it costs. Thus, the costs of our eatables are kept as low as possible. Located in India, this shop is a hope for a chain of shops all over the country.</p>
+            </div>
+        </main>
+
+        <div id="special">
+            <section class="left">
+                <h3 class="special-header">Today's Special</h3>
+                <p class="special-content">Our darkest roasted coffee, the Arabica Coffee is a blend best enjoyed black for those who like their coffee bold, like a traditional espresso with bittersweet notes. <br><br>Feast your eyes and tongue upon today's special menu and let your sate and happy mind do the talking.</p>
+            </section>
+            <aside class="right">
+                <img id="arabica-coffee" src="./arabica-coffee.jpg" alt="Arabica coffee image" height="430" width="430">
+            </aside>
+        </div>
+
+        <div id="menu">
+            <h1 class="menu-header"><span class="big-tilda">~</span>Menu<span class="big-tilda">~</span></h1>
+
+            <div class="div-menu">
+                <table class="table-menu">
+                    <tr>
+                        <td class="cell-wide">Coffee</td><td class="cell-wide">100</td>
+                    </tr>
+                    <tr>
+                        <td class="cell-wide">Tea</td><td class="cell-wide">50</td>
+                    </tr>
+                    <tr>
+                        <td class="cell-wide">Cold Coffee</td><td class="cell-wide">120</td>
+                    </tr>
+                    <tr>
+                        <td class="cell-wide">Arabica Coffee</td><td class="cell-wide">200</td>
+                    </tr>
+                    <tr>
+                        <td class="cell-wide">Water Bottle</td><td class="cell-wide">10</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <footer id="footer">
+            <h2 class="contact-header">Contact Us</h2>
+
+            <table class="table-contact">
+                <tr>
+                    <td class="cell-wide">Email: </td><td class="cell-wide">thecoffeeshop@domain.com</td>
+                </tr>
+                <tr>
+                    <td class="cell-wide">Mobile No.: </td><td class="cell-wide">+91 98765 43210</td>
+                </tr>
+                <tr>
+                    <td class="cell-wide">Website: </td><td class="cell-wide">www.thecoffeeshop.com</td>
+                </tr>
+            </table>
+
+            <p id="last-line">Made with &hearts; by <a id="fawzaan-link" href="https://www.github.com/fawzaanshaikh/">Fawzaan Shaikh</a></p>
+        </footer>
+    </body>
+
+    <script>
+        var navbar = document.getElementById("navbar");
+        document.addEventListener("scroll", function() {
+            navbar.classList.add("navbar-opaque");
+        });
+    </script>
+</html>

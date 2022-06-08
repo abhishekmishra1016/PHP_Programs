@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMP2</title>
+    <script>
+        var myArray = [];
+        
+        function acceptArray() {
+            for(let i=0;  i<5; i++){
+                myArray.push(parseInt(window.prompt('Enter element at position ' + (i+1))));
+            }
+            var printArea = document.getElementById('display');
+            printArea.innerText = myArray;
+        }
+
+        function pushArray() {
+            var array1 = [99,100];
+            var array2 = [99,100];
+            myArray = array1.concat(array2);
+            var printArea = document.getElementById('display');
+            printArea.innerText = myArray;
+        }
+
+        function evennos() {
+            var nos = (window.prompt('Enter the number'));
+            var result = [nos[0]];
+
+            for(var i=1; i<nos.length; i++){
+                if(nos[i-1]%2 == 0 && nos[i]%2 ==0)
+                {
+                    result.push('-',nos[i]);
+                }
+                else {
+                    result.push(nos[i]);
+                }
+            }
+            var printArea = document.getElementById('display');
+            printArea.innerText = result.join('');
+        }
+
+        function checkPalin() {
+            var str1 = window.prompt('Enter your string');
+            var str2 = str1.split('').reverse().join('');
+
+            var printArea = document.getElementById('display');
+            
+
+            if(str1 == str2){
+                printArea.innerText = "It is Palindrome";
+            }
+            else {
+                printArea.innerText = "It is NOT";
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="acceptArray()">Accept Numbers</button>
+    <button onclick="pushArray()">Push</button>
+    <button onclick="evennos()">evennos</button>
+    <button onclick="checkPalin()">Check Palindrome</button>
+    <h2 id="display"> Hi</h2>
+</body>
+</html>
